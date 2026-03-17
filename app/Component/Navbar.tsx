@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
@@ -26,52 +27,17 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <div
-            className="flex items-center gap-2 group cursor-pointer"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            {/* Icon mark */}
-            <div className="relative w-9 h-9 flex items-center justify-center rounded-lg bg-gradient-to-br from-[#ff7a18] to-[#ffb347] shadow-lg shadow-orange-500/30 group-hover:shadow-orange-500/50 transition-all duration-300">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="w-5 h-5"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M3 17L9 11L13 15L21 7"
-                  stroke="white"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M17 7H21V11"
-                  stroke="white"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="text-white font-bold text-sm tracking-wide">
-                Close Friends
-              </span>
-              <span
-                className="text-xs font-semibold tracking-widest uppercase"
-                style={{
-                  background: "linear-gradient(90deg, #ff7a18, #ffb347)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                Traders
-              </span>
-            </div>
+          <div className="w-36 h-18 relative">
+            <Image
+              src="/logo-cft.png"
+              alt="Close Friends Traders"
+              fill
+              className="object-contain rounded-lg"
+              priority
+            />
           </div>
 
           {/* CTA Button */}
@@ -86,7 +52,7 @@ export default function Navbar() {
             </button>
 
             {/* Mobile hamburger */}
-            <button
+            {/* <button
               className="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Menu"
@@ -100,13 +66,13 @@ export default function Navbar() {
               <span
                 className={`block w-5 h-0.5 bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
               />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
 
       {/* Mobile Menu */}
-      <div
+      {/* <div
         className={`md:hidden transition-all duration-400 overflow-hidden ${
           menuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
         }`}
@@ -134,7 +100,7 @@ export default function Navbar() {
             Start Now →
           </button>
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 }

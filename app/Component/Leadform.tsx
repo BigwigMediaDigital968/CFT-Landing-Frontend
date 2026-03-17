@@ -314,7 +314,7 @@ export default function LeadForm() {
       <section
         id="leadform"
         ref={sectionRef}
-        className="relative py-20 overflow-hidden"
+        className="relative pt-10 overflow-hidden"
         style={{ background: "#0b0b0f" }}
       >
         {/* Background glows */}
