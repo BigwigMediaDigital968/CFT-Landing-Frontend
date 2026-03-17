@@ -389,24 +389,29 @@ export default function LeadForm() {
 
                   {[
                     {
-                      icon: "📈",
-                      title: "Expert Analysis",
-                      desc: "Daily market insights & signals",
+                      icon: "💸",
+                      title: "Start Earning with Rahul TradeDost",
+                      desc: "Join traders who are already making daily income using our smart trading setups",
                     },
                     {
-                      icon: "🔐",
-                      title: "Secure & Transparent",
-                      desc: "100% verified trading strategies",
+                      icon: "📊",
+                      title: "Daily Income Opportunities",
+                      desc: "Multiple trade setups every day for quick profit chances",
                     },
                     {
-                      icon: "💬",
-                      title: "Dedicated Support",
-                      desc: "Personal mentor assigned to you",
+                      icon: "⚡",
+                      title: "Quick Entry & Exit Alerts",
+                      desc: "Real-time updates so you can act fast and maximize gains",
                     },
                     {
-                      icon: "🏆",
-                      title: "Proven Results",
-                      desc: "95% client satisfaction rate",
+                      icon: "🔥",
+                      title: "Beginner to Pro Support",
+                      desc: "Even if you're new, we guide you from zero to earning",
+                    },
+                    {
+                      icon: "💎",
+                      title: "Limited Group Access",
+                      desc: "Only serious traders allowed - high quality setups only",
                     },
                   ].map((item) => (
                     <div
