@@ -312,7 +312,6 @@ export default function LeadForm() {
       )}
 
       <section
-        id="leadform"
         ref={sectionRef}
         className="relative pt-10 overflow-hidden"
         style={{ background: "#0b0b0f" }}
@@ -459,6 +458,7 @@ export default function LeadForm() {
 
               {/* Right panel — Form */}
               <div
+                id="leadform"
                 className="p-8 md:p-10"
                 style={{ borderLeft: "1px solid #2a2a35" }}
               >
