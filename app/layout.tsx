@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     "trading signals",
     "close friends traders",
   ],
+  icons: {
+    icon: "/logo-cft.png",
+  },
 };
 
 export default function RootLayout({
