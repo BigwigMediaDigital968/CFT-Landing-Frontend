@@ -120,8 +120,8 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-        <div className="max-w-3xl">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 text-center">
+        <div className="max-w-3xl text-center">
           {/* Badge */}
           <div
             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border text-xs font-semibold tracking-widest uppercase mb-8 animate-fade-in"
@@ -132,51 +132,55 @@ export default function Hero() {
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#ff7a18] animate-pulse" />
-            Trusted by 1000+ Traders
+            Trusted by 1,00,000+ Traders
           </div>
 
           {/* Heading */}
           <h1
             ref={headingRef}
-            className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white mb-6"
+            className="w-full text-center text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.15] tracking-tight text-white mb-6"
           >
-            Empowering{" "}
+            India’s{" "}
             <span
+              className="inline-block"
               style={{
                 background: "linear-gradient(90deg, #ff7a18, #ffb347)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-                fontStyle: "italic",
+                // fontStyle: "italic",
               }}
             >
-              The Future
-            </span>
-            <br />
-            Of Smart Crypto{" "}
+              Most Powerful
+            </span>{" "}
+            Leverage Trading{" "}
             <span
+              className="inline-block"
               style={{
                 background: "linear-gradient(90deg, #ff7a18, #ffb347)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-                fontStyle: "italic",
+                // fontStyle: "italic",
               }}
             >
-              Trading
+              Platform
             </span>
           </h1>
 
           {/* Description */}
           <p
             ref={subRef}
-            className="text-[#a1a1aa] text-base sm:text-lg leading-relaxed mb-10 max-w-xl"
+            className="text-[#a1a1aa] text-base sm:text-lg leading-relaxed mb-10"
           >
             We are a future-focused team of innovators, analysts, and
-            strategists helping you build your digital asset portfolio — easily,
+            strategists helping you build your digital asset portfolio - easily,
             securely, and intelligently.
           </p>
 
           {/* CTA Buttons */}
-          <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4 mb-14">
+          <div
+            ref={ctaRef}
+            className="flex flex-col sm:flex-row gap-4 mb-14 text-center justify-center"
+          >
             <button
               onClick={scrollToLeadForm}
               className="group relative overflow-hidden px-8 py-4 rounded-full text-white font-bold text-base cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/40 active:scale-95"
@@ -217,12 +221,15 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div ref={statsRef} className="flex flex-wrap gap-8">
+          <div
+            ref={statsRef}
+            className="flex flex-wrap gap-8 text-center justify-center"
+          >
             {[
-              { value: "1000+", label: "Active Traders" },
-              { value: "₹50Cr+", label: "Volume Traded" },
+              { value: "50K+", label: "Active Traders" },
+              { value: "₹1,000Cr+", label: "Volume Traded" },
               { value: "95%", label: "Client Satisfaction" },
-              { value: "4+", label: "Years Experience" },
+              { value: "10+", label: "Years Experience" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col">
                 <span

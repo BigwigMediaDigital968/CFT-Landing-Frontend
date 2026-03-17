@@ -96,7 +96,7 @@ export default function WhyTrustUs() {
           }`}
         >
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white">
-            Why 50,000+ Traders{" "}
+            Why 100K+ Traders{" "}
             <span
               style={{
                 background: "linear-gradient(90deg, #ff7a18, #ffb347)",

@@ -510,6 +510,7 @@ export default function LeadTable() {
                         <option>In Process</option>
                         <option>Demo Shared</option>
                         <option>ID Created</option>
+                        <option>Not Interested</option>
                       </select>
                     </td>
 

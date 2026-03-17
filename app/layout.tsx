@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
+import WhatsAppFloat from "./Component/WhatsAppFloat";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
         }}
       >
         {children}
+        <WhatsAppFloat />
       </body>
     </html>
   );

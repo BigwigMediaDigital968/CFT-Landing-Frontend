@@ -451,7 +451,7 @@ export default function LeadForm() {
                     ))}
                   </div>
                   <span className="text-[#a1a1aa] text-xs">
-                    1000+ traders joined
+                    100K+ traders joined
                   </span>
                 </div>
               </div>
